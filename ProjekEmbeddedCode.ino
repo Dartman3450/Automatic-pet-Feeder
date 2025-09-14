@@ -66,8 +66,6 @@ void loop() {
   Serial.print(berat);
   Serial.println(" gram");
 
-  // if (waktuMakan)
-  // {
     if (distance >= jarak) 
     {
       Serial.println("Makanan habis.");
@@ -84,7 +82,7 @@ void loop() {
     {
       servo.write(90);   
     }
-  // }
+  }
 
-  delay(1000);  // jeda antar loop
+  delay(1000);  
 }
